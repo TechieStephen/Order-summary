@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
-
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
 
 *{
     margin: 0;
@@ -12,7 +18,7 @@ body{
     background: url('/images/pattern-background-desktop.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: hsl(225, 100%, 94%);
+    background-color: var(--Paleblue);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +46,7 @@ a{
 }
 #wrapper p{
     margin: 20px 0px;
-    color: hsl(224, 23%, 55%);
+    color: var(--Desaturatedblue);
 }
 
 #wrapper #plan{
@@ -61,26 +67,26 @@ a{
     flex: 1;
 }
 #wrapper #plan div span{
-    color: hsl(224, 23%, 55%);
+    color: var(--Desaturatedblue);
 } 
 #wrapper #plan a{
-    color: hsl(245, 75%, 52%);
+    color: var(--Brightblue);
     text-decoration: underline;
     font-weight: 650;
 }
 
 #wrapper #proceed{
     display: block;
-    background: hsl(245, 75%, 52%);
+    background: var(--Brightblue);
     color: #FFFFFF;
     padding: 15px 0px;
     border-radius: 10px;
     font-weight: 600;
     margin: 15px 0px;
-    box-shadow: 3px 3px 12px hsl(245, 81%, 64%);
+    /* box-shadow: 3px 3px 12px hsl(245, 81%, 64%); */
 }
 #wrapper #cancel{
     margin: 15px 0px;
     font-weight: 650;
-    color: hsl(224, 23%, 55%);
+    color: var(--Desaturatedblue);
 }
