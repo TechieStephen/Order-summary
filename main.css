@@ -17,7 +17,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background: url('/images/pattern-background-mobile.svg');
+    background: url('/images/pattern-background-desktop.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: var(--Paleblue);
@@ -35,7 +35,7 @@ h1, h4{
 }
 
 .card{
-    width: 90%;
+    width: 28%;
     background-color: #ffffff;
     text-align: center;
     border-radius: 20px;
@@ -105,16 +105,16 @@ h1, h4{
     color: var(--Darkblue);
 }
 
-@media (min-width:1440px){
+@media (max-width:900px){
     body{
         width: 100%;
-        background: url('/images/pattern-background-desktop.svg');
+        background: url('/images/pattern-background-mobile.svg');
         background-size: contain;
         background-repeat: no-repeat;
         background-color: var(--Paleblue);
     }
     .card{
-        width: 28%;
+        width: 90%;
     }
 }
 
