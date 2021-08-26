@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
+
 *{
     margin: 0;
     padding:0 ;
@@ -24,7 +25,7 @@ a{
 }
 .card{
     margin-top: 50px;
-    width: 30%;
+    width: 28%;
     background-color: #ffffff;
     text-align: center;
     border-radius: 20px;
@@ -37,13 +38,37 @@ a{
     padding: 30px;
     background-color: inherit;
 }
-#wrapper h1{
-    
-}
 #wrapper p{
     margin: 20px 0px;
     color: hsl(224, 23%, 55%);
 }
+
+#wrapper #plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+#wrapper #plan img{
+    width: 50px;
+    margin-right: 20px;
+}
+#wrapper #plan div{
+    text-align: left;
+    flex: 1;
+}
+#wrapper #plan div span{
+    color: hsl(224, 23%, 55%);
+} 
+#wrapper #plan a{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 650;
+}
+
 #wrapper #proceed{
     display: block;
     background: hsl(245, 75%, 52%);
@@ -52,4 +77,10 @@ a{
     border-radius: 10px;
     font-weight: 600;
     margin: 15px 0px;
+    box-shadow: 3px 3px 12px hsl(245, 81%, 64%);
+}
+#wrapper #cancel{
+    margin: 15px 0px;
+    font-weight: 650;
+    color: hsl(224, 23%, 55%);
 }
