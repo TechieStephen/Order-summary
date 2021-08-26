@@ -105,6 +105,12 @@ h1, h4{
     color: var(--Darkblue);
 }
 
+@media (max-width:1200px){
+    .card{
+        width: 35%;
+    }
+}
+
 @media (max-width:900px){
     body{
         width: 100%;
