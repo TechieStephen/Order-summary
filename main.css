@@ -5,6 +5,7 @@
     --Verypaleblue: hsl(225, 100%, 98%);
     --Desaturatedblue: hsl(224, 23%, 55%);
     --Darkblue: hsl(223, 47%, 23%);
+    --hoverColor: #625bda;
 }
 
 *{
@@ -29,7 +30,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
-h2, h3{
+h1, h4{
     color: var(--Darkblue);
 }
 
@@ -78,7 +79,7 @@ h2, h3{
     font-weight: 650;
 }
 #wrapper #plan a:hover{
-    color: var(--Desaturatedblue);
+    color: var(--hoverColor);
 }
 
 #wrapper #proceed{
@@ -92,7 +93,7 @@ h2, h3{
     /* box-shadow: 3px 3px 12px hsl(245, 81%, 64%); */
 }
 #wrapper #proceed:hover{
-    background: var(--Desaturatedblue);
+    background: var(--hoverColor);
 }
 
 #wrapper #cancel{
