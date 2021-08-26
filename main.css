@@ -15,7 +15,8 @@
 }
 body{
     width: 100%;
-    background: url('/images/pattern-background-desktop.svg');
+    min-height: 100vh;
+    background: url('/images/pattern-background-mobile.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-color: var(--Paleblue);
@@ -23,15 +24,17 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 16px;
-
 }
 a{
     text-decoration: none;
     color: inherit;
 }
+h2, h3{
+    color: var(--Darkblue);
+}
+
 .card{
-    margin-top: 50px;
-    width: 28%;
+    width: 90%;
     background-color: #ffffff;
     text-align: center;
     border-radius: 20px;
@@ -41,7 +44,7 @@ a{
     width: 100%;
 }
 .card #wrapper{
-    padding: 30px;
+    padding: 20px;
     background-color: inherit;
 }
 #wrapper p{
@@ -74,6 +77,9 @@ a{
     text-decoration: underline;
     font-weight: 650;
 }
+#wrapper #plan a:hover{
+    color: var(--Desaturatedblue);
+}
 
 #wrapper #proceed{
     display: block;
@@ -85,8 +91,40 @@ a{
     margin: 15px 0px;
     /* box-shadow: 3px 3px 12px hsl(245, 81%, 64%); */
 }
+#wrapper #proceed:hover{
+    background: var(--Desaturatedblue);
+}
+
 #wrapper #cancel{
     margin: 15px 0px;
     font-weight: 650;
     color: var(--Desaturatedblue);
 }
+#wrapper #cancel:hover{
+    color: var(--Darkblue);
+}
+
+
+@media (min-width:900px){
+    .card{
+        width: 40%;
+    }
+    .card #wrapper{
+        padding: 30px;
+    }
+}
+
+@media (min-width:1440px){
+    body{
+        width: 100%;
+        background: url('/images/pattern-background-desktop.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--Paleblue);
+    }
+    .card{
+        width: 28%;
+    }
+}
+
+
